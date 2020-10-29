@@ -16,6 +16,8 @@ foreach ($request_json['events'] as $event)
 			
 			$reply_message = 'ฉันได้รับข้อความ '. $text.' ของคุณแล้ว!';   
 			
+			$reply_message ="KANT";
+			
 		} else {
 			$reply_message = 'ฉันได้รับ '.$event['message']['type'].' ของคุณแล้ว!';
 		}
