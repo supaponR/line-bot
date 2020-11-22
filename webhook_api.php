@@ -80,7 +80,7 @@ function reply_message_1($url, $post_header, $post_body)
 	return $result;
 }
 
-function reply_message_1($url, $post_header, $post_body)
+function reply_message_2($url, $post_header, $post_body)
 {
 	$ch = curl_init($url);	
 	curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
