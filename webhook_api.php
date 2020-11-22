@@ -12,8 +12,12 @@ foreach ($request_json['events'] as $event)
 	{
 		if($event['message']['type'] == 'text')
 		{
+			$text = $event['message']['text'];
 			
+			$reply_message = 'ฉันได้รับข้อความ "'. $text.'" ของคุณแล้ว!'; 
 			
+		} else {
+			$reply_message = 'ฉันได้รับ "'.$event['message']['type'].'" ของคุณแล้ว!';
 		}
 		
 	} else {
