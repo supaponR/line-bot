@@ -31,8 +31,9 @@ foreach ($request_json['events'] as $event)
 	
 	$post_body = json_encode($data);
 	
-	$send_result = reply_message_1('https://api.line.me/v2/bot/message/reply', $post_header, $post_body); // reply type-1	
-	//$send_result = reply_message_2('https://api.line.me/v2/bot/message/reply', $post_header, $post_body); // reply type-2
+	// reply method type-1 vs type-2
+	$send_result = reply_message_1('https://api.line.me/v2/bot/message/reply', $post_header, $post_body); 
+	//$send_result = reply_message_2('https://api.line.me/v2/bot/message/reply', $post_header, $post_body);
 }
 
 function reply_message_1($url, $post_header, $post_body)
