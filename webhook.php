@@ -14,14 +14,14 @@ foreach ($request_json['events'] as $event)
 		{
 			$text = $event['message']['text'];
 			
-			$reply_message = 'ฉันได้รับข้อความ '. $text.' ของคุณแล้ว!'; 
+			$reply_message = 'ฉันได้รับข้อความ "'. $text.'" ของคุณแล้ว!'; 
 			
 		} else {
-			$reply_message = 'ฉันได้รับ '.$event['message']['type'].' ของคุณแล้ว!';
+			$reply_message = 'ฉันได้รับ "'.$event['message']['type'].'" ของคุณแล้ว!';
 		}
 		
 	} else {
-		$reply_message = 'ฉันได้รับ Event '.$event['type'].' ของคุณแล้ว!';
+		$reply_message = 'ฉันได้รับ Event "'.$event['type'].'" ของคุณแล้ว!';
 	}
 	
 	// reply message
