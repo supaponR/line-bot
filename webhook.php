@@ -20,7 +20,7 @@ foreach ($request_json['events'] as $event)
 				$reply_message = " ผู้พัฒนาระบบคือ น.ส สุภาพร ระเบียบโพธิ์";
 			}
 			if("เส้นทางไปที่มหาลัยKMUTT" == $text || "ขอLinkMapไปKmutt "  == $text || "ขอLinkเส้นทางไปKMUTT"  == $text){
-				$reply_link = " https://goo.gl/maps/D2sFxAPfZdCfkvcRA ";
+				$reply_message = " https://goo.gl/maps/D2sFxAPfZdCfkvcRA ";
 			}
 			if(("covid-19" == $text) || ("Covid-19" == $text) || ("สถานการณ์โควิด" == $text) || ("สถานการณ์โควิดวันนี้" == $text) ){
 				$reply_message = "เสียชีวิตเพิ่มขึ้น!!";
