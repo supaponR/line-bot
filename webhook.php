@@ -16,8 +16,11 @@ foreach ($request_json['events'] as $event)
 			
 			$reply_message = 'ฉันได้รับข้อความ "'. $text.'" ของคุณแล้ว!'; 
 			
-		        if("ขอชื่อผู้พัฒนาระบบ" == $text){
-				$reply_message = "น.ส สุภาพร ระเบียบโพธิ์";
+		        if("ขอชื่อผู้พัฒนาระบบ" == $text || "ผู้พัฒนาระบบ"  == $text || "ผู้พัฒนาระบบคือใคร"  == $text ){
+				$reply_message = " ผู้พัฒนาระบบคือ น.ส สุภาพร ระเบียบโพธิ์";
+			}
+			if("เส้นทางไปที่มาหาลัยKMUTT" == $text ){
+				$reply_message = " https://goo.gl/maps/D2sFxAPfZdCfkvcRA ";
 			}
 			if(("covid-19" == $text) || ("Covid-19" == $text) || ("สถานการณ์โควิด" == $text) || ("สถานการณ์โควิดวันนี้" == $text) ){
 				$reply_message = "เสียชีวิตเพิ่มขึ้น!!";
