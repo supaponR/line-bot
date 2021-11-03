@@ -20,7 +20,7 @@ foreach ($request_json['events'] as $event)
 				$reply_message = " ผู้พัฒนาระบบคือ น.ส สุภาพร ระเบียบโพธิ์";
 			}
 			if("เส้นทางไปที่มหาลัยKMUTT" == $text || "ขอLinkMapไปKmutt "  == $text || "ขอLinkเส้นทางไปKMUTT"  == $text){
-				$reply_message = " https://goo.gl/maps/D2sFxAPfZdCfkvcRA " ;
+				$reply_message = "https://goo.gl/maps/D2sFxAPfZdCfkvcRA " ;
 			}
 			if("ขอภาพเส้นทางไปKMUTT "){
 				$reply_message ="https://drive.google.com/file/d/1Pt0-iopFx3ji-THqOAa4H-HN72YX41Ag/view?usp=sharing";
