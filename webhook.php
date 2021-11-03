@@ -25,6 +25,9 @@ foreach ($request_json['events'] as $event)
 			if("ขอภาพเส้นทางไปKMUTT" == $text){
 				$reply_message = "https://s115.convertio.me/p/-o3hBt8xVJZtIFAj1zk0Kg/e0887ef6a79110ea2d460c25d9ea94db/B211223D-58E3-4B02-858D-EDEBC4B8BAAE.webp" ;
 			}
+			if("ขอประวัติความเป็นมาของมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี" == $text || "ประวัติKMUTT" == $text  || "ประวัติความเป็นมาKMUTT" == $text){
+				$reply_message = "https://www.kmutt.ac.th/about-kmutt/history";
+			}
 			if(("covid-19" == $text) || ("Covid-19" == $text) || ("สถานการณ์โควิด" == $text) || ("สถานการณ์โควิดวันนี้" == $text) ){
 				$reply_message = "เสียชีวิตเพิ่มขึ้น!!";
 				
