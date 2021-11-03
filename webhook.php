@@ -22,7 +22,7 @@ foreach ($request_json['events'] as $event)
 			if("เส้นทางไปที่มหาลัยKMUTT" == $text || "ขอLinkMapไปKmutt "  == $text || "ขอLinkเส้นทางไปKMUTT"  == $text){
 				$reply_message = "https://goo.gl/maps/D2sFxAPfZdCfkvcRA" ;
 			}
-			if("ขอภาพเส้นทางไปKMUTT == $text  "){
+			if("ขอภาพเส้นทางไปKMUTT" == $text){
 				$reply_message ="https://drive.google.com/file/d/1Pt0-iopFx3ji-THqOAa4H-HN72YX41Ag/view?usp=sharing";
 			}
 			if(("covid-19" == $text) || ("Covid-19" == $text) || ("สถานการณ์โควิด" == $text) || ("สถานการณ์โควิดวันนี้" == $text) ){
